@@ -56,6 +56,7 @@ public class Quiz {
             int index = rand.nextInt(questionsBank.size());
             while (hs.contains(index))
                 index = rand.nextInt(questionsBank.size());
+            hs.add(index);
             questions.add(index);
         }
         System.out.println("This is the beginning of the quiz. Please type the number of your answer after each question. Goodluck :)");
